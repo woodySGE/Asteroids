@@ -1,4 +1,4 @@
 # Asteroids
 
-# source .venv/bin/activate
-# uv run main.py
+source .venv/bin/activate                                                              
+uv run main.py
