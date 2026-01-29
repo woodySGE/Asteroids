@@ -9,7 +9,6 @@ class Player(CircleShape):
 
     PLAYER_SHOOT_COOLDOWN_SECONDS = 0.3
     rotation = 0
-    rapid_fire = False
     Timer = 0
 
     # in the Player class
@@ -49,7 +48,7 @@ class Player(CircleShape):
         self.position += rotated_with_speed_vector
 
     def shoot(self):
-        if self.rapid_fire == True:
+        if rapid_fire == True:
             bullet = shot(self.position.x, self.position.y, SHOT_RADIUS)
             direction = pygame.math.Vector2(0,1)
             direction = direction.rotate(self.rotation)
