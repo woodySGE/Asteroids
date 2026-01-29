@@ -4,7 +4,6 @@ from logger import *
 import random
 import pygame
 
-megaduplication = False
 
 class Asteroid(CircleShape):
     def __init__(self,x,y,radius):
