@@ -11,7 +11,6 @@ class Player(CircleShape):
     rotation = 0
     Timer = 0
 
-    # in the Player class
     def triangle(self):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
         right = pygame.Vector2(0, 1).rotate(self.rotation + 90) * self.radius / 1.5
